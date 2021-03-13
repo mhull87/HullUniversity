@@ -1,0 +1,38 @@
+﻿@model IEnumerable<HullUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
+
+@{ 
+    ViewData["Title"] = "Student Body Statistics";
+}
+
+<h1>Student Body Statistics</h1>
+
+<table>
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th>
+            Students
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                    </td>
+                    <td>
+                        @item.StudentCount
+                    </td>
+                </tr>
+            }
+</table>
+<br />
+<hr />
+<br />
+
+<h2>Contact Information</h2>
+<p><b>Name:</b> Melissa Hull</p>
+<p><b>Phone:</b> 920-882-6596</p>
+<p><b>Email:</b> enrollment@hulluniversity.edu</p>
