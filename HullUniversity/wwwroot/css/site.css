@@ -18,6 +18,14 @@ td {
     padding: 2%;
 }
 
+.larger {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
